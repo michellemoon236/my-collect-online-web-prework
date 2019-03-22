@@ -8,11 +8,11 @@ def my_collect (array)
     end
   else
     while i < array.length 
-      yield array[i].upcase
+      array_new << yield array[i].upcase
       i = i + 1  
     end
 end
-array
+array_new
 end 
   
 
