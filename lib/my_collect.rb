@@ -4,15 +4,14 @@ def my_collect (array)
     while i < array.length 
       yield array[i].split(" ").first
       i = i + 1 
-      array
     end
   else
     while i < array.length 
       yield array[i].upcase
       i = i + 1 
-      array
     end
 end
+array
 end 
 
 
