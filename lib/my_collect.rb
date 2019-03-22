@@ -5,14 +5,15 @@ def my_collect (array)
     while i < array.length 
       array_new << yield array[i].split(" ").first
       i = i + 1 
+      array_new
     end
   else
     while i < array.length 
       array_new << yield array[i].upcase
       i = i + 1  
+      array_new
     end
 end
-array_new
 end 
   
 
