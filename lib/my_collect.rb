@@ -1,18 +1,19 @@
 def my_collect (array)
   i = 0 
+  array_new = []
   if array.include?(" ")
     while i < array.length 
-      yield array.split(" ").first
+      array_new << yield array.split(" ").first
       i = i + 1 
     end
   else
     while i < array.length 
-      yield array.upcase
+      array_new << yield array.upcase
       i = i + 1  
     end
 
 end
-array 
+array_new
 
 end 
   
